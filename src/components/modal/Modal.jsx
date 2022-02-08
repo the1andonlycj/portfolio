@@ -13,7 +13,7 @@ const Modal = ({ project, onClose }) => {
   const gifMap = {
     mappy: "https://github.com/senhorgomes/mappy_trails/raw/master/docs/overview-my-maps.gif?raw=true",
     sureSheets: "https://github.com/meghein/sure-sheets/raw/feature/css_signin-signup/docs/gifs/SureSheetsOverview1.gif",
-    renegade: "",
+    renegade: "https://i.imgur.com/Ve2GAKH.gif",
   }
 
   console.log("Sup", gifMap[project])
