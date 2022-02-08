@@ -25,7 +25,7 @@ function Projects() {
 
   return (
     <>
-        (<div className='portfolio__projects section__padding' id="projects">
+        <div className='portfolio__projects section__padding' id="projects">
           <div className='portfolio__projects-heading'>
             <h1 className='gradient__text'>These are my projects of note thus far as well as what I love about them:</h1>
           </div>
@@ -34,7 +34,7 @@ function Projects() {
               <Article imgURL={article.imgURL} date={article.date} name={article.name} content={article.content} text={article.text} onClick={onOpenModal} />
             )}
           </div>
-        </div>) 
+        </div>
         <div>
           {modalDetails.isOpen && (<Modal project={modalDetails.content} onClose={onCloseModal}/>) }
         </div>
