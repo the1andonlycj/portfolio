@@ -1,0 +1,119 @@
+.portfolio__possibility {
+  display: flex;
+  flex-direction: row;
+}
+
+.portfolio__possibility-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 2rem;
+  
+
+}
+
+.portfolio__possibility-image img {
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(0% 8%,100% 22%,100% 75%,75% 75%,100% 91%,50% 75%,0% 75%);
+  filter: contrast(90%);
+  transition: all 0.5s ease;
+}
+
+.portfolio__possibility-image img:hover {
+  filter: contrast(100%)
+}
+
+.portfolio__possibility-content {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.portfolio__possibility-content h4 {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #71E5FF;
+}
+
+.portfolio__possibility-content h4:last-child {
+  color: #ff8A71;
+}
+
+.portfolio__possibility-content h1 {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 45px;
+  margin: 1rem 0;
+}
+
+.portfolio__possibility-content p {
+  color: var(--color-text);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+
+  margin-bottom: 2rem;
+}
+
+.red-button {
+  background: var(--color-subtext);
+  color: #FFF; 
+  border-radius: 40px;
+  font-family: var(--font-family);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  padding: .5rem 1rem;
+
+  border: none;
+  outline: none;
+  cursor: pointer;
+  min-width: 150px;
+}
+
+@media screen and (max-width: 950px) {
+  .portfolio__possibility {
+    flex-direction: column;
+  }
+
+  .portfolio__possibility-image {
+    margin: 1rem 0;
+  }
+
+  .portfolio__possibility-image img {
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0% 8%,100% 22%,100% 83%,75% 84%,49% 100%,48% 85%,1% 85%);
+
+  }
+
+  .portfolio__possibility-content {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .portfolio__possibility-image img {
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0% 8%,100% 22%,100% 83%,75% 84%,49% 100%,48% 85%,1% 85%);
+
+}
+
+@media screen and (max-width: 550px) {
+  .portfolio__possibility-image img {
+      width: 100%;
+      height: 100%;
+      clip-path: polygon(0% 8%,100% 22%,100% 83%,75% 84%,49% 100%,48% 85%,1% 85%);
+
+  }
+}
+}

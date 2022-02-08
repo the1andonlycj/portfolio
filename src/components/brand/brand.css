@@ -1,0 +1,31 @@
+.portfolio__brand {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.portfolio__brand div {
+  flex: 1;
+  max-width: 150px;
+  min-width: 120px;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bitsy {
+  filter: invert(75%);
+  padding-left: .75em;
+  padding-right: .75em;
+}
+
+#bitsy-text {
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+  text-align: center;
+}
