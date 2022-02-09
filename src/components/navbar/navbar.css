@@ -8,7 +8,7 @@
 .portfolio__navbar-links {
   flex: 1;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   
 }
@@ -96,6 +96,14 @@
 
 .portfolio__navbar-menu_container-links-sign {
   display: none;
+}
+
+#header-name {
+  font-family: var(--font-bubble);
+  color: var(--color-text);
+  text-shadow: 2px 10px 10px var(--color-footer);
+  font-size: 3em;
+  letter-spacing: 3px;
 }
 
 @media screen and (max-width: 1050px) {
