@@ -22,10 +22,10 @@ const Navbar = () => {
         <div className="portfolio__navbar-links_container">
           <Menu />
         </div>
-        <div className="portfolio__navbar-sign">
+        {/* <div className="portfolio__navbar-sign">
           <p>Buy in</p>
           <button type="button">Speak Up</button>
-        </div>
+        </div> */}
         <div className='portfolio__navbar-menu'>
           {toggleMenu 
             ? <RiCloseLine color="fff" size={27} onClick={()=> setToggleMenu(false)} />
@@ -35,10 +35,10 @@ const Navbar = () => {
             <div className='portfolio__navbar-menu_container scale-up-center'>
               <div className='portfolio__navbar-menu_container-links'>
                 <Menu />
-                <div className="portfolio__navbar-menu_container-links-sign">
+                {/* <div className="portfolio__navbar-menu_container-links-sign">
                   <p>Buy In.</p>
                   <button type="button">Speak Up</button>
-                </div>
+                </div> */}
               </div>
             </div>
           }
