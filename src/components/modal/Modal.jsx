@@ -1,12 +1,9 @@
 import React from 'react';
-import { useState } from 'react';
 import ReactDom from 'react-dom';
 import './modal.css';
 
 const Modal = ({ project, onClose }) => {
-  // using project, we set what to display.
   const _onClose = () => {
-    console.log("THIS IS RUNNING")
     onClose()
   }
 
@@ -16,7 +13,6 @@ const Modal = ({ project, onClose }) => {
     renegade: "https://i.imgur.com/Ve2GAKH.gif",
   }
 
-  console.log("Sup", gifMap[project])
   return ReactDom.createPortal(
     <div className="portfolio__blog-container_modal" onClick={_onClose} >
       <div className="portfolio__modal-overlay"></div>

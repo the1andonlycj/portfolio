@@ -25,7 +25,7 @@ const Brand = () => {
           <img className="bitsy" src={bitsmariokart} alt="Bitsy knows Mario Kart." />
         </div>
       </div>
-      <h1 className='gradient__text' id="bitsy-text">The above mashup icons were made for a side project.</h1>
+      <h1 className='gradient__text' id="bitsy-text">The mashup icons above were made for a baseball/videogame/meme culture side project.</h1>
     </div>
   )
 }

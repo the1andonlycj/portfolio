@@ -19,7 +19,9 @@ const Navbar = () => {
   return (
     <div className="portfolio__navbar">
       <div className='portfolio__navbar-links'>
-        <h1 id="header-name">Charlie Hayes</h1>
+        <div className='portfolio__navbar-links_logo'>
+          <img src={neonbrain} />
+        </div>
         <div className="portfolio__navbar-links_container">
           <Menu />
         </div>

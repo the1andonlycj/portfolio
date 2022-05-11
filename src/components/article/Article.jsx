@@ -8,6 +8,7 @@ const Article = ({ imgURL, date, text, content, onClick }) => {
   const _onClick = () => {
     onClick(content)
   }
+  
   return (
     <div className="portfolio__blog-container_article" onClick={_onClick}>
       <div className="portfolio__blog-container_article-image">

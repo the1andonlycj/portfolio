@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useState } from 'react';
-import { Article, Modal } from '../../components';
+import { Article, Modal, Git } from '../../components';
 import {mappytrailsproject, neonrenegadeproject, suresheetsproject, } from './imports'
 import './projects.css';
 
@@ -8,7 +8,6 @@ function Projects() {
   const [modalDetails, setModalDetails] = useState({isOpen: false, content: ""})
 
   const onOpenModal = (content) => {
-    console.log("CONTENT?", content)
     setModalDetails({isOpen: true, content: content})
   }
 
@@ -27,13 +26,14 @@ function Projects() {
     <>
         <div className='portfolio__projects section__padding' id="projects">
           <div className='portfolio__projects-heading'>
-            <h1 className='gradient__text'>These are my projects of note thus far as well as what I love about them:</h1>
+            <h1 className='gradient__text'>Wanna see some projects? Here they are, as well as what I love about them:</h1>
           </div>
           <div className='portfolio__projects-container'>
             {articleMap.map((article) => 
               <Article imgURL={article.imgURL} date={article.date} name={article.name} content={article.content} text={article.text} onClick={onOpenModal} />
             )}
           </div>
+          <Git />
         </div>
         <div>
           {modalDetails.isOpen && (<Modal project={modalDetails.content} onClose={onCloseModal}/>) }
